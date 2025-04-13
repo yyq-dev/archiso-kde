@@ -135,6 +135,8 @@ wayland
 plasma-meta
 sddm
 sddm-kcm
+vulkan-radeon
+vulkan-swrast
 
 # 多媒体支持
 pipewire
@@ -149,11 +151,9 @@ sof-firmware
 networkmanager
 
 # 中文本地化
-noto-fonts-cjk
 noto-fonts-emoji
 ttf-dejavu
-bash-completion
-
+ttf-hack-nerd
 
 # 输入法框架
 fcitx5
