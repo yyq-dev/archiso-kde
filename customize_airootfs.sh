@@ -1,15 +1,12 @@
 #!/bin/bash
 
-# 请将此脚本放入 airootfs/root/
-# 用户名：arch 密码：arch
-
 # 设置中文环境
 sed -i 's/#zh_CN.UTF-8/zh_CN.UTF-8/' /etc/locale.gen
 locale-gen
 echo "LANG=zh_CN.UTF-8" > /etc/locale.conf
 
 # 创建自动登录用户
-useradd -m -G wheel -s /bin/bash arch
+useradd -m -G wheel -s /usr/bin/fish arch
 echo "arch:arch" | chpasswd
 
 # 配置自动登录
@@ -77,8 +74,29 @@ EOF
 cat > ${USER_HOME}/.config/fcitx5/conf/pinyin.conf <<EOF
 [Pinyin]
 InitialPromptTimeout=500
-PageSize=9
+PageSize=7
 ShowPrediction=True
+EOF
+
+cat > ${USER_HOME}/.config/fcitx5/conf/classicui.conf <<EOF
+# 字体
+Font="苹方 12"
+# 菜单字体
+MenuFont="苹方 12"
+# 托盘字体
+TrayFont="苹方 12"
+EOF
+
+cat > ${USER_HOME}/.config/kdeglobals <<EOF
+[General]
+fixed=Hack Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=苹方,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[WM]
+activeFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 EOF
 
 # 设置权限
