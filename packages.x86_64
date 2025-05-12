@@ -137,6 +137,7 @@ sddm
 sddm-kcm
 vulkan-radeon
 vulkan-swrast
+vulkan-intel
 
 # 多媒体支持
 pipewire
