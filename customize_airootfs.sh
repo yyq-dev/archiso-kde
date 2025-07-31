@@ -80,23 +80,23 @@ EOF
 
 cat > ${USER_HOME}/.config/fcitx5/conf/classicui.conf <<EOF
 # 字体
-Font="苹方 12"
+Font="苹方-简 12"
 # 菜单字体
-MenuFont="苹方 12"
+MenuFont="苹方-简 12"
 # 托盘字体
-TrayFont="苹方 12"
+TrayFont="苹方-简 12"
 EOF
 
 cat > ${USER_HOME}/.config/kdeglobals <<EOF
 [General]
 fixed=Hack Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=苹方,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=苹方-简,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=苹方-简,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=苹方-简,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=苹方-简,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [WM]
-activeFont=苹方,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=苹方-简,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 EOF
 
 # 设置权限
