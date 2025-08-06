@@ -171,6 +171,7 @@ firefox-i18n-zh-cn
 konsole
 partitionmanager
 kate
+localepurge # 需要在aur构建后建立本地仓库
 filelight
 
 
