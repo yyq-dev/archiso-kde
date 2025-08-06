@@ -34,7 +34,7 @@ Build an Arch Linux Live CD with a Chinese environment KDE desktop.
     - 设置全局和用户级别的输入法环境变量和配置文件。
 
 7. **移除多余locale**：
-    - 通过AUR构建localepurge软件包
+    - 通过AUR构建localepurge软件包。
     - 按照 `pacman.conf` 末尾的说明构建本地仓库。
 
 ## 安装步骤
