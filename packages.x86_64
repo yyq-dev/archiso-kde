@@ -15,7 +15,6 @@ cloud-init
 cryptsetup
 darkhttpd
 ddrescue
-dhclient
 dhcpcd
 diffutils
 dmidecode
@@ -67,6 +66,7 @@ memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+mmc-utils
 modemmanager
 mtools
 nano
@@ -93,7 +93,6 @@ pv
 qemu-guest-agent
 refind
 reflector
-rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
@@ -123,6 +122,7 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdg-utils
 xfsprogs
 xl2tpd
 zsh
@@ -171,7 +171,6 @@ firefox-i18n-zh-cn
 konsole
 partitionmanager
 kate
-localepurge # 需要在aur构建后建立本地仓库
 filelight
-
+localepurge
 
