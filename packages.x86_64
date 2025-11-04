@@ -172,5 +172,5 @@ konsole
 partitionmanager
 kate
 filelight
-localepurge
-
+localepurge # 需要自己从AUR构建软件包，再本地构建包含该软件包的软件仓库
+duperemove
